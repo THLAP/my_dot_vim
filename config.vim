@@ -56,9 +56,7 @@ set wildmenu           " Turn on WiLd menu
 set hidden             " Change buffer - without saving
 set history=768        " Number of things to remember in history.
 set cf                 " Enable error files & error jumping.
-if $TMUX == ''
-  set clipboard+=unnamed " Yanks go on clipboard instead.
-endif
+set clipboard+=unnamed " Yanks go on clipboard instead.
 set autowrite          " Writes on make/shell commands
 " set timeoutlen=450     " Time to wait for a command (after leader for example).
 set ttimeout
@@ -83,7 +81,7 @@ set shiftround
 set cindent
 set autoindent
 set smarttab
-set expandtab
+set noexpandtab
 
 " ---------------
 " Searching
@@ -110,7 +108,7 @@ set list
 " Reset the listchars
 set listchars=""
 " make tabs visible
-set listchars=tab:▸▸
+set listchars=tab:\ \ 
 " show trailing spaces as dots
 set listchars+=trail:•
 " The character to show in the last column when wrap is off and the line
@@ -136,3 +134,8 @@ set mouse=a    " Mouse in all modes
 " Better complete options to speed it up
 set complete=.,w,b,u,U
 set nrformats=
+
+" ---------------
+" Vimdiff
+" ---------------
+set diffopt=filler,vertical
