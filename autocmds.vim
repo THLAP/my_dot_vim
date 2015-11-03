@@ -1,5 +1,5 @@
 " configure js-beautify
-autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin
+autocmd FileType javascript setlocal equalprg=js-beautify\ -t\ -s\ 2\ -w\ 140\ -j\ --stdin
 
 " set text formatting for python
 autocmd Filetype python setlocal expandtab tabstop=2 shiftwidth=2

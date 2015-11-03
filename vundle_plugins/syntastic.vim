@@ -15,6 +15,7 @@ let g:syntastic_html_checkers = ['handlebars']
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_full_redraws = 1
+let g:syntastic_javascript_checkers = ['jshint']
 
 " Python 3 syntax checker
 let g:syntastic_python_python_exec = '/usr/bin/python3.4'
