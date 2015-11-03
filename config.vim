@@ -74,7 +74,9 @@ set omnifunc=syntaxcomplete#Complete
 " ---------------
 " Text Format
 " ---------------
+set textwidth=158  " lines longer than 158 columns will be broken
 set tabstop=2
+set softtabstop=2 " insert/delete 2 spaces when hitting a TAB/BACKSPACE
 set backspace=indent,eol,start " Delete everything with backspace
 set shiftwidth=2 " Tabs under smart indent
 set shiftround
