@@ -20,12 +20,13 @@ let g:tsuquyomi_disable_quickfix = 1
 
 " Hat tip http://git.io/SPIBfg
 let g:syntastic_error_symbol = '✗'
-let g:syntastic_warning_symbol = '⚠'
+let g:syntastic_warning_symbol = '!!'
 let g:syntastic_full_redraws = 1
 
+let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_html_checkers = ['handlebars']
 let g:syntastic_typescript_checkers = ['tsuquyomi']
 
 " Python 3 syntax checker
-let g:syntastic_python_python_exec = '/usr/bin/python3.4'
+let g:syntastic_python_python_exec = '/usr/bin/python3.6'
