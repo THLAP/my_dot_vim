@@ -4,6 +4,8 @@
 " Version: 1.0
 " =============================================================================
 
+if has('python3')
+endif
 " All of the plugins are installed with Vundle from this file.
 source ~/.vim/vundle.vim
 
